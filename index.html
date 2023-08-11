@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dice Role Game</title>
+  </head>
+  <body>
+    <main>
+      <section class="player player--0 player--active">
+        <h2 class="name" id="name--0">Player 1</h2>
+        <p class="score" id="score--0">43</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--0">0</p>
+        </div>
+      </section>
+      <section class="player player--1">
+        <h2 class="name" id="name--1">Player 2</h2>
+        <p class="score" id="score--1">24</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--1">0</p>
+        </div>
+      </section>
+
+      <img src="dice-5.png" alt="Playing dice" class="dice" />
+      <button class="btn btn--new">🔄 New game</button>
+      <button class="btn btn--roll">🎲 Roll dice</button>
+      <button class="btn btn--hold">📥 Hold</button>
+      <button class="btn--help">⚙</button>
+      <audio id="rollSound" src="./dice-142528.mp3"></audio>
+      <audio id="clickSound" src="./mouse-click-153941.mp3"></audio>
+      <audio id="newGameSound" src="./game-start-6104.mp3"></audio>
+      
+      <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+        <h1>How to play: Dice Roll Game🎮</h1>
+        <p>
+          Welcome to the Dice Roll Game! This exciting game is a twist on the
+          classic dice game, where your strategy and luck will determine your
+          success. The goal is to be the first player to reach a total score of
+          100 points.
+        </p>
+
+        <h1>Gameplay Overview:</h1>
+        <ol>
+          <li>
+            The game is played between two players, Player 1 and Player 2.
+          </li>
+
+          <li>
+            Player 1 starts the game. To begin their turn, they need to click on
+            the "Roll Dice" button.
+          </li>
+
+          <li>
+            When the "Roll Dice" button is clicked, a virtual dice will be
+            rolled, and a number between 1 and 6 will be generated. This number
+            represents the points earned during that roll.
+          </li>
+
+          <li>
+            After each roll, the points earned are added to the player's current
+            score. The current score starts at 0 at the beginning of the turn.
+          </li>
+
+          <li>
+            Player 1 can choose to roll the dice multiple times during their
+            turn by clicking the "Roll Dice" button. The points from each roll
+            will be added to the current score.
+          </li>
+
+          <li>
+            However, if a roll results in the number 1, the player's current
+            score will be reset to 0, and it becomes Player 2's turn. So, be
+            cautious and strategic with your rolls!
+          </li>
+
+          <li>
+            To secure the points earned in their current turn, Player 1 can
+            click the "Hold" button. The current score will be added to their
+            total score, and it becomes Player 2's turn.
+          </li>
+
+          <li>
+            Player 2 follows the same rules as Player 1, rolling the dice to
+            accumulate points or choosing to hold to secure their points.
+          </li>
+
+          <li>
+            The game continues to alternate between Player 1 and Player 2 until
+            one of the players reaches a total score of 100 or more.
+          </li>
+        </ol>
+
+        <h1>Winning the Game:</h1>
+
+        <p>
+          The player who first accumulates a total score of 100 points or more
+          is the winner! So, use your dice-rolling skills and strategic
+          decision-making to outplay your opponent and claim victory.
+        </p>
+
+        <h1>Ready to Play?</h1>
+
+        <p>
+          Now that you understand the rules of the game, it's time to roll the
+          dice and enjoy the excitement of the Dice Roll Game! May the best
+          player win!
+        </p>
+        <h3>Created by TheOptimum</h3>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
