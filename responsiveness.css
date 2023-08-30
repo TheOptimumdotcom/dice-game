@@ -1,0 +1,90 @@
+@media only screen and (max-width: 480px) {
+  .main {
+    width: 1.2rem;
+  }
+  .player {
+    padding: 4rem;
+  }
+  .btn {
+    padding: 1.5rem 3rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .dice {
+    height: 7rem;
+  }
+  .modal {
+    width: 90%;
+    padding: 3rem;
+  }
+  .name {
+    position: absolute;
+    top: 7rem;
+    font-size: 22px;
+  }
+  .score {
+    font-size: 50px;
+  }
+  .score {
+    position: absolute;
+    top: 10rem;
+  }
+  .current {
+    position: absolute;
+    top: 47rem;
+
+    width: 35%;
+    padding: 2rem;
+  }
+  .btn {
+    font-size: 1.2rem;
+    padding: 0.4rem 2rem;
+  }
+  .btn--new {
+    top: 1rem;
+  }
+  .btn--roll {
+    top: 34.3rem;
+  }
+  .btn--hold {
+    top: 40.1rem;
+  }
+  .btn--help {
+    position: absolute;
+    top: 1.5rem;
+    left: 90%;
+    right: 0;
+    border: none;
+    font-size: 2.5rem;
+  }
+  .dice {
+    position: absolute;
+    top: 20.5rem;
+  }
+  .modal h1 {
+    font-size: 28px;
+  }
+  .modal p {
+    font-size: 18px;
+  }
+  .modal ul {
+    font-size: 18px;
+  }
+  .modal li {
+    margin-bottom: 2rem;
+  }
+  li::before {
+    list-style: none;
+    content: '';
+    display: inline-block;
+    margin-right: 0px;
+    /* height: 10px;
+    width: 10px; */
+    background-image: url(./dice.png);
+  }
+  /* .modal ul{
+    list-style-image: url('./dice.png');
+    height: 2px;
+    width: 2px;
+  } */
+}
