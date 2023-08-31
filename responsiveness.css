@@ -61,30 +61,4 @@
     position: absolute;
     top: 20.5rem;
   }
-  .modal h1 {
-    font-size: 28px;
-  }
-  .modal p {
-    font-size: 18px;
-  }
-  .modal ul {
-    font-size: 18px;
-  }
-  .modal li {
-    margin-bottom: 2rem;
-  }
-  li::before {
-    list-style: none;
-    content: '';
-    display: inline-block;
-    margin-right: 0px;
-    /* height: 10px;
-    width: 10px; */
-    background-image: url(./dice.png);
-  }
-  /* .modal ul{
-    list-style-image: url('./dice.png');
-    height: 2px;
-    width: 2px;
-  } */
 }
